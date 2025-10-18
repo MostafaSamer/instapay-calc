@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaPay Transfer Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>InstaPay Transfer Calculator</h1>
+            <p class="subtitle">Calculate transfer amounts and fees</p>
+            
+            <div class="input-group">
+                <label for="amountSent">Amount You Send</label>
+                <div class="input-container">
+                    <span class="currency">$</span>
+                    <input type="number" id="amountSent" placeholder="0.00" min="0" step="0.01">
+                </div>
+                <div class="limit-text">What recipient receives</div>
+            </div>
+
+            <div class="input-group">
+                <label for="amountDeducted">Amount Deducted From You</label>
+                <div class="input-container">
+                    <span class="currency">$</span>
+                    <input type="number" id="amountDeducted" placeholder="0.00" min="0" step="0.01">
+                </div>
+                <div class="limit-text">Total amount taken from your account</div>
+            </div>
+
+            <div class="result-section">
+                <div class="result-item">
+                    <span class="result-label">Transfer Fee:</span>
+                    <span class="result-value" id="transferFee">$0.00</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">Fee Percentage:</span>
+                    <span class="result-value" id="feePercentage">0.00%</span>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <p class="info-text">💡 Enter either amount you send or amount deducted - the other will calculate automatically</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

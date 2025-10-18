@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.input-group {
+    margin-bottom: 30px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.currency {
+    position: absolute;
+    left: 15px;
+    color: #666;
+    font-weight: 600;
+    font-size: 1.1rem;
+    z-index: 1;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 15px 15px 15px 40px;
+    border: 2px solid #e1e5e9;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+input[type="number"]:focus {
+    border-color: #667eea;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    transform: translateY(-2px);
+}
+
+input[type="number"]:invalid {
+    border-color: #e74c3c;
+    background: #fdf2f2;
+}
+
+.limit-text {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #888;
+    text-align: right;
+}
+
+.result-section {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px 0;
+    border: 1px solid #e1e5e9;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.result-item:last-child {
+    margin-bottom: 0;
+}
+
+.result-label {
+    font-weight: 600;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.result-value {
+    font-weight: 700;
+    color: #667eea;
+    font-size: 1.3rem;
+}
+
+.info-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.info-text {
+    color: #666;
+    font-size: 0.95rem;
+    background: #e8f2ff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .input-group label {
+        font-size: 1rem;
+    }
+    
+    input[type="number"] {
+        font-size: 1rem;
+    }
+    
+    .result-label {
+        font-size: 1rem;
+    }
+    
+    .result-value {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 35px 25px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .input-group label {
+        font-size: 0.95rem;
+    }
+    
+    input[type="number"] {
+        font-size: 0.95rem;
+        padding: 13px 13px 13px 38px;
+    }
+    
+    .currency {
+        font-size: 1rem;
+    }
+    
+    .limit-text {
+        font-size: 0.85rem;
+    }
+    
+    .result-label {
+        font-size: 0.95rem;
+    }
+    
+    .result-value {
+        font-size: 1.1rem;
+    }
+    
+    .info-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        padding: 30px 20px;
+        margin: 10px;
+    }
+    
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .input-group {
+        margin-bottom: 25px;
+    }
+    
+    .input-group label {
+        font-size: 0.9rem;
+    }
+    
+    input[type="number"] {
+        font-size: 0.9rem;
+        padding: 12px 12px 12px 35px;
+    }
+    
+    .currency {
+        left: 12px;
+        font-size: 0.9rem;
+    }
+    
+    .limit-text {
+        font-size: 0.8rem;
+    }
+    
+    .result-section {
+        padding: 15px;
+        margin: 25px 0;
+    }
+    
+    .result-label {
+        font-size: 0.9rem;
+    }
+    
+    .result-value {
+        font-size: 1rem;
+    }
+    
+    .info-text {
+        font-size: 0.85rem;
+        padding: 10px 15px;
+    }
+}
+
+/* Animation for smooth transitions */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Hover effects */
+.input-group:hover input[type="number"] {
+    border-color: #667eea;
+}
+
+.result-item:hover .result-value {
+    color: #5a6fd8;
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}
