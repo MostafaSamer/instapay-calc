@@ -47,6 +47,11 @@ function calculateFee(amountSent) {
         fee = 0.5;
     }
     
+    // Ensure minimum fee of $0.50 for amounts under $1000
+    if (amountSent >= 20000) {
+        fee = 20;
+    }
+    
     return fee;
 }
 
