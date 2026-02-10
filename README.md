@@ -86,5 +86,5 @@ Feel free to submit issues and enhancement requests!
 
 ---
 
-**Note**: This calculator is for demonstration purposes. Always verify fee calculations with your actual InstaPay service provider.
+**Note**: This calculator is for demonstration purposes. Always verify fee calculations with your actual InstaPay service provider. 
 
